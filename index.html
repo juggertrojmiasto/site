@@ -1,12 +1,313 @@
-<!doctype html>
+<!-- index.html -->
+<!DOCTYPE html>
 <html lang="pl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jugger Trójmiasto</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stowarzyszenie Jugger Trójmiasto</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Inter, Arial, sans-serif;
+      background: #ffffff;
+      color: #111827;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    header {
+      background: linear-gradient(to bottom, #fde68a, #fef9c3, #ffffff);
+      border-bottom: 1px solid #e5e7eb;
+      padding: 80px 0;
+    }
+
+    .hero-subtitle {
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      color: #6b7280;
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 64px;
+      line-height: 1;
+      margin-bottom: 32px;
+    }
+
+    .hero-text {
+      font-size: 22px;
+      color: #374151;
+      max-width: 800px;
+      margin-bottom: 36px;
+    }
+
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 14px 24px;
+      border-radius: 18px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.2s ease;
+    }
+
+    .button-dark {
+      background: #111827;
+      color: white;
+    }
+
+    .button-light {
+      border: 1px solid #d1d5db;
+      color: #111827;
+    }
+
+    section {
+      padding: 80px 0;
+    }
+
+    .grid {
+      display: grid;
+      gap: 48px;
+    }
+
+    .two-columns {
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    }
+
+    .card {
+      background: #f9fafb;
+      border: 1px solid #e5e7eb;
+      border-radius: 28px;
+      padding: 36px;
+    }
+
+    .dark-section {
+      background: #111827;
+      color: white;
+    }
+
+    .dark-card {
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 28px;
+      padding: 36px;
+    }
+
+    h2 {
+      font-size: 42px;
+      margin-bottom: 24px;
+    }
+
+    h3 {
+      font-size: 28px;
+      margin-bottom: 18px;
+    }
+
+    .section-label {
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      font-size: 14px;
+      color: #ca8a04;
+      margin-bottom: 12px;
+      font-weight: 700;
+    }
+
+    footer {
+      background: #f3f4f6;
+      border-top: 1px solid #e5e7eb;
+      padding: 60px 0;
+    }
+
+    ul, ol {
+      padding-left: 24px;
+    }
+
+    li {
+      margin-bottom: 12px;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 42px;
+      }
+
+      h2 {
+        font-size: 32px;
+      }
+
+      .hero-text {
+        font-size: 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <p class="hero-subtitle">Stowarzyszenie • Sport alternatywny • Trójmiasto</p>
+
+    <h1>
+      STOWARZYSZENIE<br>
+      JUGGER TRÓJMIASTO
+    </h1>
+
+    <p class="hero-text">
+      Organizujemy otwarte treningi, wydarzenia i turnieje Juggera - dynamicznego sportu drużynowego łączącego ruch, strategię i walki bronią bezpieczną (otulinową).
+    </p>
+
+    <div class="buttons">
+      <a class="button button-dark" href="https://linktr.ee/jugger.trojmiasto" target="_blank">
+        Nasze social media
+      </a>
+
+      <a class="button button-light" href="https://tr.ee/5X7veHwapI" target="_blank">
+        Kalendarz wydarzeń
+      </a>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="container grid two-columns">
+    <div>
+      <p class="section-label">Czym jest Jugger?</p>
+
+      <h2>Dynamiczny sport drużynowy inspirowany filmem „Krew bohaterów”</h2>
+
+      <p>
+        Jugger to sport, w którym dwie pięcioosobowe drużyny rywalizują o zdobycie punktów. Jeden zawodnik - qwik - stara się umieścić piłkę w bramce przeciwnika, a pozostali zawodnicy - enforcerzy - wspierają go, używając bezpiecznej broni piankowej.
+      </p>
+
+      <p>
+        Gra łączy elementy sportu kontaktowego, strategii drużynowej, refleksu i współpracy. Treningi są otwarte dla wszystkich chętnych - niezależnie od wieku, doświadczenia czy kondycji.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Co musisz przygotować?</h3>
+
+      <ul>
+        <li>Nie potrzebujesz doświadczenia ani specjalnych umiejętności.</li>
+        <li>Wystarczy wygodny strój sportowy.</li>
+        <li>Sprzęt udostępniamy na miejscu.</li>
+        <li>Nie ma wpisowego ani zapisów.</li>
+        <li>Po prostu przyjdź i spróbuj.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="dark-section">
+  <div class="container">
+    <p class="section-label" style="color:#fde68a;">Treningi</p>
+
+    <h2>Regularne otwarte treningi</h2>
+
+    <div class="grid two-columns">
+      <div class="dark-card">
+        <h3>Poniedziałki</h3>
+        <p>Park Kiloński</p>
+        <p>18:00 - 20:00</p>
+
+        <a class="button button-light" style="background:#fde68a; border:none;" href="https://maps.app.goo.gl/LsztpdNVrxkiKFmz9" target="_blank">
+          Otwórz lokalizację
+        </a>
+      </div>
+
+      <div class="dark-card">
+        <h3>Czwartki</h3>
+        <p>Park Reagana</p>
+        <p>18:00 - 20:00</p>
+
+        <a class="button button-light" style="background:#fde68a; border:none;" href="https://goo.gl/maps/5gBA378hCY1YEDZA9" target="_blank">
+          Otwórz lokalizację
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container grid two-columns">
+    <div>
+      <p class="section-label">O stowarzyszeniu</p>
+
+      <h2>Działamy na rzecz rozwoju Juggera w Polsce</h2>
+
+      <p>
+        Regularnie prowadzimy otwarte treningi Juggera dla wszystkich chętnych oraz współorganizujemy wydarzenia, turnieje i inicjatywy promujące sport alternatywny.
+      </p>
+
+      <p>
+        Współpracujemy z drużynami z Polski i zagranicy, uczestniczymy w konwentach oraz popularyzujemy aktywny i zdrowy tryb życia oparty na zasadach fair play.
+      </p>
+    </div>
+
+    <div class="card" style="background:#fef9c3; border-color:#fde68a;">
+      <h3>Cele stowarzyszenia</h3>
+
+      <ol>
+        <li>Upowszechnianie i rozwój gry w juggera.</li>
+        <li>Wspieranie i upowszechnianie kultury fizycznej.</li>
+        <li>Organizacja treningów, wydarzeń i turniejów.</li>
+        <li>Promocja aktywnego i zdrowego trybu życia.</li>
+        <li>Działania edukacyjne i wychowawcze w duchu fair play.</li>
+        <li>Organizacja czasu wolnego młodzieży oraz dorosłych.</li>
+        <li>Integracja środowiska graczy i promocja sportu alternatywnego.</li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container grid two-columns">
+    <div>
+      <h3>STOWARZYSZENIE JUGGER TRÓJMIASTO</h3>
+
+      <p>
+        Organizacja non-profit wpisana do KRS pod numerem:
+      </p>
+
+      <p><strong>0001231010</strong></p>
+
+      <p>
+        Organizacja prowadzi regularne treningi oraz działania promujące Juggera na terenie Trójmiasta i całej Polski.
+      </p>
+    </div>
+
+    <div>
+      <h3>Linki</h3>
+
+      <p>
+        <a href="https://linktr.ee/jugger.trojmiasto" target="_blank">Social media</a>
+      </p>
+
+      <p>
+        <a href="https://tr.ee/5X7veHwapI" target="_blank">Kalendarz wydarzeń</a>
+      </p>
+    </div>
+  </div>
+</footer>
+
+</body>
 </html>
