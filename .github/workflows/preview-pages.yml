@@ -1,7 +1,7 @@
-  - name: Preview Pages
-    uses: rajyan/preview-pages@v1.3.37
-    with:
-      token: ${{ steps.generate-token.outputs.token }}
-      target-dir: docs/preview-pages
-      configured-domain: test.rajyan.net
-      configured-dir: docs
+- name: Preview Pages
+  uses: rajyan/preview-pages@v1.3.37
+  with:
+    token: ${{ steps.generate-token.outputs.token }}
+    target-dir: docs/preview-pages
+    configured-domain: test.rajyan.net
+    configured-dir: docs
