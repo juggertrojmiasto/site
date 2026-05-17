@@ -5,195 +5,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Stowarzyszenie Jugger Trójmiasto</title>
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-  <meta name="description" content="Stowarzyszenie Jugger Trójmiasto - otwarte treningi, wydarzenia i turnieje Juggera w Gdyni i Trójmieście.">
-  <style>
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      font-family: Inter, Arial, sans-serif;
-      background: #ffffff;
-      color: #2b124c;
-      line-height: 1.6;
-    }
-
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 24px;
-    }
-
-    header {
-      background: linear-gradient(to bottom, #2b124c, #4c2a85, #ffffff);
-      border-bottom: 1px solid #e5e7eb;
-      padding: 80px 0;
-    }
-
-    .hero-content {
-      display: grid;
-      grid-template-columns: 1fr auto;
-      gap: 48px;
-      align-items: center;
-    }
-
-    .hero-logo {
-      width: 280px;
-      height: auto;
-      max-width: 100%;
-      filter: drop-shadow(0 8px 24px rgba(0, 0, 0, 0.3));
-    }
-
-    .hero-subtitle {
-      text-transform: uppercase;
-      letter-spacing: 0.2em;
-      color: rgba(255, 255, 255, 0.85);
-      font-size: 14px;
-      margin-bottom: 20px;
-    }
-
-	h1 {
-	  font-size: 64px;
-	  line-height: 1;
-	  margin-bottom: 32px;
-	  color: #ffffff;
-	}
-
-    .hero-text {
-      font-size: 22px;
-      color: #2b124c;
-      max-width: 800px;
-      margin-bottom: 36px;
-    }
-
-    .buttons {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 16px;
-    }
-
-    .button {
-      display: inline-block;
-      padding: 14px 24px;
-      border-radius: 18px;
-      text-decoration: none;
-      font-weight: 600;
-      transition: 0.2s ease;
-    }
-
-    .button-dark {
-      background: #2b124c;
-      color: white;
-    }
-
-    .button-light {
-      border: 1px solid #7c3aed;
-      color: #2b124c;
-    }
-
-    section {
-      padding: 80px 0;
-    }
-
-    .grid {
-      display: grid;
-      gap: 48px;
-    }
-
-    .two-columns {
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    }
-
-    .card {
-      background: #f4efff;
-      border: 1px solid #e5e7eb;
-      border-radius: 28px;
-      padding: 36px;
-    }
-
-    .dark-section {
-      background: #2b124c;
-      color: white;
-    }
-
-    .dark-card {
-      background: rgba(255,255,255,0.08);
-      border: 1px solid rgba(255,255,255,0.1);
-      border-radius: 28px;
-      padding: 36px;
-    }
-
-    h2 {
-      font-size: 42px;
-      margin-bottom: 24px;
-    }
-
-    h3 {
-      font-size: 28px;
-      margin-bottom: 18px;
-    }
-
-    .section-label {
-      text-transform: uppercase;
-      letter-spacing: 0.2em;
-      font-size: 14px;
-      color: #ca8a04;
-      margin-bottom: 12px;
-      font-weight: 700;
-    }
-
-    footer {
-      background: #f3f4f6;
-      border-top: 1px solid #e5e7eb;
-      padding: 60px 0;
-    }
-
-    ul, ol {
-      padding-left: 24px;
-    }
-
-    li {
-      margin-bottom: 12px;
-    }
-
-    a {
-      color: inherit;
-    }
-
-    @media (max-width: 768px) {
-      h1 {
-        font-size: 42px;
-      }
-
-      h2 {
-        font-size: 32px;
-      }
-
-      .hero-text {
-        font-size: 18px;
-      }
-
-      .hero-content {
-        grid-template-columns: 1fr;
-        gap: 32px;
-        text-align: center;
-      }
-
-      .hero-logo {
-        width: 200px;
-        margin: 0 auto;
-        order: -1;
-      }
-
-      .buttons {
-        justify-content: center;
-      }
-    }
-  </style>
+  <link rel="icon" type="image/x-icon" href="logos/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="logos/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="logos/logo-web.png">
+  <link rel="stylesheet" href="styles.css">
+  <meta name="description"
+        content="Stowarzyszenie Jugger Trójmiasto - otwarte treningi, wydarzenia i turnieje Juggera w Gdyni i Trójmieście.">
 </head>
 <body>
 
@@ -209,7 +26,8 @@
         </h1>
 
         <p class="hero-text">
-          Organizujemy otwarte treningi, wydarzenia i turnieje Juggera - dynamicznego sportu drużynowego łączącego ruch, strategię i walki bronią bezpieczną (otulinową).
+          Organizujemy otwarte treningi, wydarzenia i turnieje Juggera - dynamicznego sportu drużynowego łączącego ruch,
+          strategię i walki bronią bezpieczną (otulinową).
         </p>
 
         <div class="buttons">
@@ -217,13 +35,15 @@
             Nasze social media
           </a>
 
-          <a class="button button-light" href="https://calendar.google.com/calendar/embed?src=jugger.trojmiasto%40gmail.com&ctz=Europe%2FWarsaw" target="_blank">
+          <a class="button button-light"
+             href="https://calendar.google.com/calendar/embed?src=jugger.trojmiasto%40gmail.com&ctz=Europe%2FWarsaw"
+             target="_blank">
             Kalendarz wydarzeń
           </a>
         </div>
       </div>
 
-      <img class="hero-logo" src="logo-web.png" alt="Logo Trójmiasto Dziki - Stowarzyszenie Jugger Trójmiasto">
+      <img class="hero-logo" src="logos/logo-web.png" alt="Logo Trójmiasto Dziki - Stowarzyszenie Jugger Trójmiasto">
     </div>
   </div>
 </header>
@@ -236,11 +56,14 @@
       <h2>Dynamiczny sport drużynowy inspirowany filmem „Krew bohaterów”</h2>
 
       <p>
-        Jugger to sport, w którym dwie pięcioosobowe drużyny rywalizują o zdobycie punktów. Jeden zawodnik - qwik - stara się umieścić piłkę w bramce przeciwnika, a pozostali zawodnicy - enforcerzy - wspierają go, używając bezpiecznej broni piankowej.
+        Jugger to sport, w którym dwie pięcioosobowe drużyny rywalizują o zdobycie punktów. Jeden zawodnik - qwik -
+        stara się umieścić piłkę w bramce przeciwnika, a pozostali zawodnicy - enforcerzy - wspierają go, używając
+        bezpiecznej broni piankowej.
       </p>
 
       <p>
-        Gra łączy elementy sportu kontaktowego, strategii drużynowej, refleksu i współpracy. Treningi są otwarte dla wszystkich chętnych - niezależnie od wieku, doświadczenia czy kondycji.
+        Gra łączy elementy sportu kontaktowego, strategii drużynowej, refleksu i współpracy. Treningi są otwarte dla
+        wszystkich chętnych - niezależnie od wieku, doświadczenia czy kondycji.
       </p>
     </div>
 
@@ -260,29 +83,47 @@
 
 <section class="dark-section">
   <div class="container">
-    <p class="section-label" style="color:#facc15;">Treningi</p>
+    <p class="section-label">Treningi</p>
 
     <h2>Regularne otwarte treningi</h2>
 
     <div class="grid two-columns">
-      <div class="dark-card">
-        <h3>Poniedziałki</h3>
-        <p>Park Kiloński</p>
-        <p>18:00 - 20:00</p>
+      <div class="training-card">
+        <div class="training-flex">
+          <div class="training-info-column">
+            <h3>Gdynia</h3>
+            <p class="weight-600">Park Kiloński</p>
+            <p>Poniedziałki</p>
+            <p>18:00 - 20:00</p>
+          </div>
 
-        <a class="button button-light" style="background:#facc15; border:none;" href="https://maps.app.goo.gl/LsztpdNVrxkiKFmz9" target="_blank">
-          Otwórz lokalizację
-        </a>
+          <div class="training-map-column">
+            <iframe
+                    loading="lazy"
+                    allowfullscreen
+                    src="https://www.google.com/maps/embed/v1/place?q=54%C2%B032'21.9%22N%2018%C2%B028'35.0%22E&key=AIzaSyA6kYso3dsApOtNCCK7FcmYkOV2V9UTDts">
+            </iframe>
+          </div>
+        </div>
       </div>
 
-      <div class="dark-card">
-        <h3>Czwartki</h3>
-        <p>Park Reagana</p>
-        <p>18:00 - 20:00</p>
+      <div class="training-card">
+        <div class="training-flex">
+          <div class="training-info-column">
+            <h3>Gdańsk</h3>
+            <p class="weight-600">Park Reagana</p>
+            <p>Czwartki</p>
+            <p>18:00 - 20:00</p>
+          </div>
 
-        <a class="button button-light" style="background:#facc15; border:none;" href="https://goo.gl/maps/5gBA378hCY1YEDZA9" target="_blank">
-          Otwórz lokalizację
-        </a>
+          <div class="training-map-column">
+            <iframe
+                    loading="lazy"
+                    allowfullscreen
+                    src="https://www.google.com/maps/embed/v1/place?q=54%C2%B024'51.7%22N%2018%C2%B036'04.5%22E&key=AIzaSyA6kYso3dsApOtNCCK7FcmYkOV2V9UTDts">
+            </iframe>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -296,15 +137,17 @@
       <h2>Działamy na rzecz rozwoju Juggera w Polsce</h2>
 
       <p>
-        Regularnie prowadzimy otwarte treningi Juggera dla wszystkich chętnych oraz współorganizujemy wydarzenia, turnieje i inicjatywy promujące sport alternatywny.
+        Regularnie prowadzimy otwarte treningi Juggera dla wszystkich chętnych oraz współorganizujemy wydarzenia,
+        turnieje i inicjatywy promujące sport alternatywny.
       </p>
 
       <p>
-        Współpracujemy z drużynami z Polski i zagranicy, uczestniczymy w konwentach oraz popularyzujemy aktywny i zdrowy tryb życia oparty na zasadach fair play.
+        Współpracujemy z drużynami z Polski i zagranicy, uczestniczymy w konwentach oraz popularyzujemy aktywny i zdrowy
+        tryb życia oparty na zasadach fair play.
       </p>
     </div>
 
-    <div class="card" style="background:#ede9fe; border-color:#facc15;">
+    <div class="card">
       <h3>Cele stowarzyszenia</h3>
 
       <ol>
@@ -353,7 +196,8 @@
       </p>
 
       <p>
-        <a href="https://calendar.google.com/calendar/embed?src=jugger.trojmiasto%40gmail.com&ctz=Europe%2FWarsaw" target="_blank">Kalendarz wydarzeń</a>
+        <a href="https://calendar.google.com/calendar/embed?src=jugger.trojmiasto%40gmail.com&ctz=Europe%2FWarsaw"
+           target="_blank">Kalendarz wydarzeń</a>
       </p>
     </div>
 
