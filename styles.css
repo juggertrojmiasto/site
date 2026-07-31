@@ -100,6 +100,17 @@ section {
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }
 
+.trainings-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+@media (max-width: 720px) {
+    .trainings-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 .card {
     background: #f4efff;
     border-radius: 28px;
@@ -159,9 +170,6 @@ a {
     grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
-.training-card:nth-child(3) {
-    grid-column: 1 / -1;
-}
 
 .training-flex {
     display: flex;
